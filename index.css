@@ -1,0 +1,36 @@
+#container .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container .row span {
+  display: inline-block;
+  font-size: 10px;
+  width: 15px;
+}
+
+#container .row .cell {
+  width: 0.5vw;
+  min-width: 6px;
+  height: 0.5vw;
+  min-height: 6px;
+  border: 0.5px solid black;
+  margin: 0 0.1vw;
+}
+
+#container .row .past {
+  background-color: khaki;
+}
+
+@media (max-width: 480px) {
+  #container .row span {
+    font-size: 6px;
+  }
+
+  #container .row .cell {
+    margin: 0 1px;
+    min-width: 3px;
+    min-height: 3px;
+  }
+}
